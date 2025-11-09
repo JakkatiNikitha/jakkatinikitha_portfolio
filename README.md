@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # JakkatiNikitha Portfolio
 
 This is a Vite + React + TypeScript portfolio template that uses Tailwind CSS and Supabase (optional).
@@ -39,3 +40,6 @@ Notes and troubleshooting
 npm run build
 npm run preview
 ```
+=======
+# jakkatinikitha_portfolio
+>>>>>>> 0b4d6bd2490cd4b02fddd03d64bb306a57c278b0
