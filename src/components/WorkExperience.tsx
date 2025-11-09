@@ -1,6 +1,11 @@
 import { useEffect, useRef, useState } from 'react';
 import { Briefcase, MapPin, Calendar, Award, Code } from 'lucide-react';
 
+// ✅ Import company logos from src/assets/images/logos
+import aicteLogo from '../assets/images/logos/aicte.png';
+import iitLogo from '../assets/images/logos/iit.png';
+import pwcLogo from '../assets/images/logos/pwc1.png';
+
 export default function WorkExperience() {
   const [isVisible, setIsVisible] = useState(false);
   const sectionRef = useRef<HTMLElement>(null);
@@ -31,9 +36,11 @@ export default function WorkExperience() {
       type: 'Virtual Internship',
       icon: '📱',
       badge: 'Certified',
-      image: '/src/assets/images/logos/aicte.png',
-      overview: 'Developed scalable mobile applications using Kotlin, Jetpack Compose, and Android Studio. Focused on seamless UX and efficient functionality ("Wolf Books" app).',
-      certificate: 'https://drive.google.com/drive/folders/1_YawKjqCxvvcojwyiBIPayHSoxuiOIYR',
+      image: aicteLogo, // ✅ imported image
+      overview:
+        'Developed scalable mobile applications using Kotlin, Jetpack Compose, and Android Studio. Focused on seamless UX and efficient functionality ("Wolf Books" app).',
+      certificate:
+        'https://drive.google.com/drive/folders/1_YawKjqCxvvcojwyiBIPayHSoxuiOIYR',
       keyAchievements: [
         'Developed scalable mobile applications using Kotlin and Jetpack Compose',
         'Built "Wolf Books" app with online reading, bookmarking, recommendations, and categorized search',
@@ -50,9 +57,11 @@ export default function WorkExperience() {
       type: 'Virtual Internship',
       icon: '🤖',
       badge: 'Completed',
-      image: '/src/assets/images/logos/iit.png',
-      overview: 'Developed ML models for Diabetes Prediction, Human Action Detection, and Bike-Sharing Demand Prediction.',
-      certificate: 'https://drive.google.com/drive/folders/12d62P8GOO8iTY4-6ykJGwPK50sRraOcr',
+      image: iitLogo, // ✅ imported image
+      overview:
+        'Developed ML models for Diabetes Prediction, Human Action Detection, and Bike-Sharing Demand Prediction.',
+      certificate:
+        'https://drive.google.com/drive/folders/12d62P8GOO8iTY4-6ykJGwPK50sRraOcr',
       keyAchievements: [
         'Applied exploratory data analysis (histograms, heatmaps) and feature engineering',
         'Built end-to-end pipelines for data preprocessing, training, and evaluation',
@@ -69,9 +78,11 @@ export default function WorkExperience() {
       type: 'Job Simulation',
       icon: '📊',
       badge: 'Certified',
-      image: '/src/assets/images/logos/pwc1.png',
-      overview: 'Created 10+ interactive Power BI dashboards including Call Centre Solution, Churn Analysis, and Diversity & Inclusion dashboards to visualize complex data and improve decision-making.',
-      certificate: 'https://drive.google.com/drive/folders/15fUfAVko9N_ApeFDqvCkvefwo8lEskch',
+      image: pwcLogo, // ✅ imported image
+      overview:
+        'Created 10+ interactive Power BI dashboards including Call Centre Solution, Churn Analysis, and Diversity & Inclusion dashboards to visualize complex data and improve decision-making.',
+      certificate:
+        'https://drive.google.com/drive/folders/15fUfAVko9N_ApeFDqvCkvefwo8lEskch',
       keyAchievements: [
         'Created 10+ interactive Power BI dashboards (Call Centre, Churn Analysis, Diversity & Inclusion)',
         'Visualized complex data to improve decision-making and streamline reporting',
@@ -89,7 +100,12 @@ export default function WorkExperience() {
       className="py-20 md:py-32 px-4 bg-white dark:bg-gray-900 transition-colors relative z-10"
     >
       <div className="container mx-auto max-w-6xl">
-        <div className={`text-center mb-16 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+        {/* Section Header */}
+        <div
+          className={`text-center mb-16 transition-all duration-1000 ${
+            isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+        >
           <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-red-500 bg-clip-text text-transparent">
             Work Experience
           </h2>
@@ -99,15 +115,18 @@ export default function WorkExperience() {
           </p>
         </div>
 
+        {/* Experience Cards */}
         <div className="space-y-8 divide-y divide-gray-200 dark:divide-gray-800">
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className={`transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
+              className={`transition-all duration-1000 ${
+                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+              }`}
               style={{ transitionDelay: `${index * 150}ms` }}
             >
-              <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-orange-100 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-500 transition-all duration-300 hover:shadow-2xl overflow-hidden">
-                {/* Badge in top-right (replaces image) */}
+              <div className="bg-white dark:bg-gray-900 rounded-2xl shadow-xl border border-orange-100 dark:border-gray-700 hover:border-orange-300 dark:hover:border-orange-500 transition-all duration-300 hover:shadow-2xl overflow-hidden relative">
+                {/* Badge */}
                 <div className="absolute top-4 right-4">
                   <span className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold flex items-center space-x-2">
                     <Award className="w-4 h-4" />
@@ -117,27 +136,21 @@ export default function WorkExperience() {
 
                 {/* Content */}
                 <div className="p-8">
-                  {/* Title and Company (with small logo area) */}
                   <div className="flex items-start justify-between mb-6">
                     <div className="flex-1">
                       <div className="flex items-center space-x-4 mb-2">
-                        {/* Logo / company image placeholder */}
+                        {/* Logo */}
                         <div className="w-14 h-14 bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden flex items-center justify-center flex-shrink-0">
-                          {exp.image || (exp as any).logo ? (
-                            <img
-                              src={(exp as any).logo || exp.image}
-                              alt={`${exp.company} logo`}
-                              className="w-full h-full object-contain"
-                            />
-                          ) : (
-                            <Briefcase className="w-7 h-7 text-orange-600" />
-                          )}
+                          <img
+                            src={exp.image}
+                            alt={`${exp.company} logo`}
+                            className="w-full h-full object-contain"
+                          />
                         </div>
 
                         <div>
                           <h3 className="text-3xl font-bold text-gray-800 dark:text-white">{exp.role}</h3>
                           <div className="flex items-center space-x-2 mt-1 text-orange-600 dark:text-orange-400 font-semibold text-lg">
-                            <span className="sr-only">Company</span>
                             <span>{exp.company}</span>
                           </div>
                         </div>
@@ -165,9 +178,8 @@ export default function WorkExperience() {
                     <p className="text-gray-700 dark:text-gray-300 leading-relaxed">{exp.overview}</p>
                   </div>
 
-                  {/* Two Column Layout */}
+                  {/* Achievements & Skills */}
                   <div className="grid md:grid-cols-2 gap-8 mb-8">
-                    {/* Key Achievements */}
                     <div>
                       <h4 className="text-lg font-bold text-gray-800 dark:text-white mb-4 flex items-center space-x-2">
                         <Award className="w-5 h-5 text-yellow-500" />
@@ -183,7 +195,6 @@ export default function WorkExperience() {
                       </ul>
                     </div>
 
-                    {/* Technologies and Skills */}
                     <div>
                       <h4 className="text-lg font-bold text-gray-800 dark:text-white mb-4 flex items-center space-x-2">
                         <Code className="w-5 h-5" />
