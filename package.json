@@ -5,7 +5,6 @@
   "description": "Portfolio website of Jakkati Nikitha - Computer Science Engineer",
   "author": "Jakkati Nikitha",
   "license": "ISC",
-  "homepage": "https://JakkatiNikitha.github.io/jakkatinikitha-portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
