@@ -6,7 +6,6 @@
   "author": "Jakkati Nikitha",
   "license": "ISC",
   "homepage": "https://JakkatiNikitha.github.io/jakkatinikitha-portfolio",
-  "main": "index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
