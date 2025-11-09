@@ -26,8 +26,8 @@ export default function Projects() {
       fullDesc:
         'An ML-Based Firewall for Malware, Password Attack, and MITM Attack Detection. Built using CatBoost and XGBoost achieving 98% malware detection, 95% password attack detection, and 93% MITM attack detection.',
       tags: ['Malware attack', 'MITM Attack', 'Password Attack', 'Catboost', 'Pipeline'],
-      liveLink: '#',
-      githubLink: '#',
+      liveLink: 'https://github.com/JakkatiNikitha/smart-cyber-defense',
+      githubLink: 'https://github.com/JakkatiNikitha/smart-cyber-defense',
     },
     {
       title: 'Emotion-Based Music Recommendation System',
@@ -36,8 +36,8 @@ export default function Projects() {
       fullDesc:
         'A cutting-edge project that bridges Artificial Intelligence, Computer Vision, and Music to provide a personalized, emotion-based music recommendation experience.',
       tags: ['Python', 'TensorFlow', 'Flask', 'Pandas', 'ML', 'Keras', 'OpenCV', 'Matplotlib', 'Librosa', 'Pydub', 'NumPy'],
-      liveLink: '#',
-      githubLink: '#',
+      liveLink: 'https://github.com/JakkatiNikitha/Mini-Project-Music-Recommendation-Based-On-Facial-Expression',
+      githubLink: 'https://github.com/JakkatiNikitha/Mini-Project-Music-Recommendation-Based-On-Facial-Expression',
     },
     {
       title: 'AI Healthcare Chatbot',
@@ -46,7 +46,7 @@ export default function Projects() {
       fullDesc:
         'This project implements a Smart AI healthcare chatbot that generates summary sheets based on user symptoms in both English and Telugu languages.',
       tags: ['React', 'Python', 'HTML'],
-      liveLink: '#',
+      liveLink: 'https://github.com/JakkatiNikitha/HealthCare_Chatbot',
       githubLink: 'https://github.com/JakkatiNikitha/HealthCare_Chatbot',
     },
     {
@@ -56,8 +56,8 @@ export default function Projects() {
       fullDesc:
         'Comparative analysis of ML approaches to detect malicious URLs. Achieved 97% accuracy with Random Forest and CatBoost, and 83% with Naive Bayes.',
       tags: ['Random Forest', 'CatBoost', 'Naive Bayes', 'RFE'],
-      liveLink: '#',
-      githubLink: '#',
+      liveLink: 'https://colab.research.google.com/drive/1eSBA078AFIUS0LrTUBdN1IW13F93H0QR#scrollTo=3HKA7IbRq5R8',
+      githubLink: 'https://colab.research.google.com/drive/1eSBA078AFIUS0LrTUBdN1IW13F93H0QR#scrollTo=3HKA7IbRq5R8',
     },
     {
       title: 'Weather Forecast',
@@ -66,8 +66,8 @@ export default function Projects() {
       fullDesc:
         'Developed a weather application using machine learning models to improve forecast accuracy with beautiful visualizations.',
       tags: ['Python', 'APIs'],
-      liveLink: '#',
-      githubLink: '#',
+      liveLink: 'https://github.com/JakkatiNikitha/InfoByte_WeatherApp',
+      githubLink: 'https://github.com/JakkatiNikitha/InfoByte_WeatherApp',
     },
     {
       title: 'Network Infrastructure with Cisco Packet Tracer',
@@ -76,8 +76,8 @@ export default function Projects() {
       fullDesc:
         'Designed and implemented a complete network infrastructure ensuring efficient interconnectivity and scalability.',
       tags: ['Cisco Packet Tracer', 'Networking', 'Firewall', 'ACLs'],
-      liveLink: '#',
-      githubLink: '#',
+      liveLink: 'https://drive.google.com/drive/home',
+      githubLink: 'https://drive.google.com/drive/home',
     },
   ];
 
