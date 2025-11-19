@@ -16,5 +16,5 @@
     "noUnusedParameters": true,
     "types": ["vite/client"]
   },
-  "include": ["src", "App.tsx"]
+  "include": ["src"]
 }
