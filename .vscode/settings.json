@@ -1,0 +1,7 @@
+{
+  "css.lint.unknownAtRules": "ignore",
+  "scss.lint.unknownAtRules": "ignore",
+  "less.lint.unknownAtRules": "ignore",
+  // Recommendation: install Tailwind CSS IntelliSense extension for best DX
+  "editor.formatOnSave": false
+}
