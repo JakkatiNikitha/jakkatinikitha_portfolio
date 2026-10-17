@@ -21,7 +21,7 @@ export default function Projects() {
   const projects = [
     {
       title: 'Smart Cyber Defence',
-      image: './src/assets/images/logos/cyber2.jpg',
+      image: './src/assets/images/logos/cyber.jpg',
       shortDesc: 'ML Based Firewall',
       fullDesc:
         'An ML-Based Firewall for Malware, Password Attack, and MITM Attack Detection. Built using CatBoost and XGBoost achieving 98% malware detection, 95% password attack detection, and 93% MITM attack detection.',
